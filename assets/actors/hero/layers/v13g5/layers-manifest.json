@@ -1,0 +1,68 @@
+{
+  "version": "v13g.5",
+  "source": "res://assets/actors/hero/hero_male_idle.webp",
+  "sourceSize": [999, 1536],
+  "feetAnchorPixels": [500, 1488],
+  "recompositionCheck": {
+    "preview": "res://assets/actors/hero/layers/v13g5/preview/recomposed.png",
+    "absoluteErrorPixels": 0,
+    "rmse": 0,
+    "note": "Visible coarse layers recompose exactly to the current full-body reference."
+  },
+  "currentPass": "coarse_recomposition_layers",
+  "notes": [
+    "This is the first engineering pass for Godot layered rig validation.",
+    "Visible layers are horizontal coarse partitions, not final semantic art cuts.",
+    "Transparent semantic placeholders are included so the node contract can stabilize before art refinement."
+  ],
+  "visibleLayers": [
+    {
+      "name": "hair",
+      "path": "res://assets/actors/hero/layers/v13g5/hair.png",
+      "slice": [0, 0, 999, 260],
+      "zIndex": 10
+    },
+    {
+      "name": "head",
+      "path": "res://assets/actors/hero/layers/v13g5/head.png",
+      "slice": [0, 260, 999, 170],
+      "zIndex": 20
+    },
+    {
+      "name": "torso",
+      "path": "res://assets/actors/hero/layers/v13g5/torso.png",
+      "slice": [0, 430, 999, 330],
+      "zIndex": 30
+    },
+    {
+      "name": "hips",
+      "path": "res://assets/actors/hero/layers/v13g5/hips.png",
+      "slice": [0, 760, 999, 250],
+      "zIndex": 40
+    },
+    {
+      "name": "legs",
+      "path": "res://assets/actors/hero/layers/v13g5/legs.png",
+      "slice": [0, 1010, 999, 345],
+      "zIndex": 50
+    },
+    {
+      "name": "feet",
+      "path": "res://assets/actors/hero/layers/v13g5/feet.png",
+      "slice": [0, 1355, 999, 181],
+      "zIndex": 60
+    }
+  ],
+  "semanticPlaceholders": [
+    "ribbon",
+    "frontArm",
+    "backArm",
+    "frontHand",
+    "backHand",
+    "robeFront",
+    "robeBack",
+    "sleeveFront",
+    "sleeveBack",
+    "tassel"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "version": "v13g.10.2",
+  "coordinateSpace": "Godot 2D pixels, positive Y down",
+  "pipeline": {
+    "runtimeScene": "res://scenes/fx/PixelFxPlayer.tscn",
+    "runtimeScript": "res://scripts/PixelFxPlayer.cs",
+    "frameMode": "runtime generated AnimatedSprite2D frames",
+    "textureFilter": "nearest",
+    "futureAssetRoot": "res://assets/fx"
+  },
+  "effects": {
+    "fx.weapon_slash": {
+      "animation": "weapon_slash",
+      "category": "weapon",
+      "role": "single weapon swing trail",
+      "style": "hard edge sword arc, blue-white core, yellow hot pixels",
+      "defaultAnchor": "between hero and enemy, above weapon contact line"
+    },
+    "fx.hit_spark": {
+      "animation": "hit_spark",
+      "category": "hit",
+      "role": "small damage contact spark",
+      "style": "yellow-orange cross spark with red pixel debris",
+      "defaultAnchor": "target torso impact point"
+    },
+    "fx.heavy_impact": {
+      "animation": "heavy_impact",
+      "category": "hit",
+      "role": "heavy hit or guard break shock",
+      "style": "diamond shock contour, horizontal pixel shock line, debris chunks",
+      "defaultAnchor": "target torso or guard break point"
+    },
+    "fx.inner_guard": {
+      "animation": "inner_guard",
+      "category": "inner_power",
+      "role": "inner-power guard or recovery pulse",
+      "style": "broken jade ring with four cardinal pixel marks",
+      "defaultAnchor": "actor chest center, never over UI"
+    },
+    "fx.shaolin_gold_body": {
+      "animation": "shaolin_gold_body",
+      "category": "sect",
+      "theme": "shaolin",
+      "role": "Shaolin golden body defense",
+      "style": "gold diamond shield, vertical and horizontal bronze axis pixels",
+      "defaultAnchor": "actor chest center"
+    },
+    "fx.taiji_spiral": {
+      "animation": "taiji_spiral",
+      "category": "martial_art",
+      "theme": "taiji",
+      "role": "Taiji redirect or soft guard",
+      "style": "black-white rotating broken arcs with jade accent pixels",
+      "defaultAnchor": "actor chest center"
+    },
+    "fx.six_meridian_sword": {
+      "animation": "six_meridian_sword",
+      "category": "martial_art",
+      "theme": "six_meridian",
+      "role": "Six Meridian Sword beam attack",
+      "style": "six narrow cyan, blue, and gold pixel beams",
+      "defaultAnchor": "line from caster hand toward target torso"
+    },
+    "fx.ancient_tomb_moon": {
+      "animation": "ancient_tomb_moon",
+      "category": "sect",
+      "theme": "ancient_tomb",
+      "role": "Ancient Tomb cold-moon strike",
+      "style": "cold crescent arc with blue shadow and icy trailing pixels",
+      "defaultAnchor": "above target shoulder or torso"
+    },
+    "fx.romance_assist": {
+      "animation": "romance_assist",
+      "category": "romance",
+      "theme": "partner_assist",
+      "role": "romance partner assist cue",
+      "style": "paired rose and gold silhouettes with hand-link pixels",
+      "defaultAnchor": "beside hero, leaving room for future partner sprite"
+    }
+  },
+  "acceptance": [
+    "FX are separate from actor body and weapon sprites.",
+    "FX use hard pixel edges and nearest filtering.",
+    "FX avoid full-screen soft circles and UI-like labels.",
+    "FX can be previewed with WUXIA_GODOT_PREVIEW_FX.",
+    "Theme FX expose their source system through category and theme metadata."
+  ]
+}

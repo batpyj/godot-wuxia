@@ -1,0 +1,33 @@
+{
+  "version": "v15g.11",
+  "rewardFormula": {
+    "silverBase": 48,
+    "silverPerFloor": 3,
+    "silverEnemyHpDivisor": 180,
+    "cultivationBase": 18,
+    "cultivationPerFloor": 1,
+    "cultivationDamageDivisor": 160,
+    "essenceBase": 1,
+    "essenceBonusEveryFloors": 5,
+    "essenceBonus": 1,
+    "foodBonusEveryFloors": 4,
+    "foodBonus": 1,
+    "sectReputationFloorDivisor": 10,
+    "sectReputationMin": 1
+  },
+  "dropByTag": {
+    "外功": "练骨砂",
+    "身法": "轻身残页",
+    "防反": "护心铁片",
+    "内功": "温玉丹砂",
+    "破招": "断招残谱",
+    "default": "江湖杂物"
+  },
+  "messages": {
+    "rewardTemplate": "+{silver} 银两 · +{cultivation} 修为",
+    "foodAppendTemplate": " · +{food} 寒玉粮",
+    "dropTemplate": "战利品 · {dropName} x{essence}",
+    "sectNoticeTemplate": "{sect}战绩 +{sectReputation} · 传功堂记录第{floor}层胜绩",
+    "adventureNoticeTemplate": "第{floor}层已清理 · 第{turn}回合结算完成"
+  }
+}

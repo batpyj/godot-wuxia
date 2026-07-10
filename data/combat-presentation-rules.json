@@ -1,0 +1,96 @@
+{
+  "version": "v15g.12",
+  "enemyVisualProfiles": {
+    "boss": {
+      "id": "boss_default",
+      "bodyTexturePath": "res://assets/actors/enemies/boss_default_idle.webp",
+      "weaponTexturePath": "res://assets/weapons/staff/staff_basic.png",
+      "feetAnchorPixels": [512, 1490],
+      "weaponSocketLocalFromFeet": [-260, -980],
+      "weaponScale": 2.35,
+      "actorScale": 0.25,
+      "isBoss": true
+    },
+    "floorBands": [
+      {
+        "id": "enemy_early",
+        "minFloor": 1,
+        "bodyTexturePath": "res://assets/actors/enemies/enemy_early_idle.webp",
+        "feetAnchorPixels": [469, 1475],
+        "weaponSocketLocalFromFeet": [-230, -950],
+        "weaponScale": 2.1,
+        "actorScale": 0.22
+      },
+      {
+        "id": "enemy_mid",
+        "minFloor": 21,
+        "bodyTexturePath": "res://assets/actors/enemies/enemy_mid_idle.webp",
+        "feetAnchorPixels": [479, 1486],
+        "weaponSocketLocalFromFeet": [-235, -965],
+        "weaponScale": 2.16,
+        "actorScale": 0.22
+      },
+      {
+        "id": "enemy_late",
+        "minFloor": 30,
+        "bodyTexturePath": "res://assets/actors/enemies/enemy_late_idle.webp",
+        "feetAnchorPixels": [512, 1490],
+        "weaponSocketLocalFromFeet": [-250, -970],
+        "weaponScale": 2.22,
+        "actorScale": 0.23
+      }
+    ],
+    "weaponCycle": [
+      {
+        "floorModulo": 0,
+        "weaponTexturePath": "res://assets/weapons/blade/blade_basic.png"
+      },
+      {
+        "floorModulo": 1,
+        "weaponTexturePath": "res://assets/weapons/sword/sword_basic.png"
+      },
+      {
+        "floorModulo": 2,
+        "weaponTexturePath": "res://assets/weapons/staff/staff_basic.png"
+      },
+      {
+        "floorModulo": 3,
+        "weaponTexturePath": "res://assets/weapons/cane/cane_basic.png"
+      },
+      {
+        "floorModulo": 4,
+        "weaponTexturePath": "res://assets/weapons/spear/spear_basic.png"
+      }
+    ]
+  },
+  "timelineDurations": {
+    "grazeRecover": 0.25,
+    "grazeNextBeat": 0.1,
+    "hitRecover": 0.45,
+    "hitNextBeat": 0.15,
+    "defeatPause": 0.9,
+    "rewardSettlement": 0.45,
+    "combatRecover": 0.25,
+    "combatNextBeat": 0.1,
+    "enemySpawn": 1.05,
+    "enemySpawnNextBeat": 0.35
+  },
+  "bossTimelineDurations": {
+    "defeatPause": 1.15,
+    "rewardSettlement": 0.55,
+    "enemySpawn": 1.25,
+    "enemySpawnNextBeat": 0.45
+  },
+  "rewardNoticePresentation": {
+    "maxEvents": 4,
+    "basePosition": [640, 604],
+    "rowSpacing": 28,
+    "colors": {
+      "reward": [1.0, 0.82, 0.38, 1.0],
+      "drop": [0.52, 0.9, 1.0, 1.0],
+      "sect_notice": [0.78, 1.0, 0.6, 1.0],
+      "adventure_notice": [1.0, 0.94, 0.72, 1.0],
+      "default": [1.0, 0.9, 0.65, 1.0]
+    }
+  }
+}

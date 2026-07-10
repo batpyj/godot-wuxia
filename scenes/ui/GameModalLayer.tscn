@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/GameModalLayer.cs" id="1_game_modal"]
+
+[node name="GameModalLayer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 286.0
+offset_top = 124.0
+offset_right = 1314.0
+offset_bottom = 806.0
+script = ExtResource("1_game_modal")

@@ -1,0 +1,133 @@
+{
+  "version": "v13g.1",
+  "sourceRoot": "C:/Users/Administrator/Documents/只不过是从头再来",
+  "copyMode": "copied, source files are not modified",
+  "assets": [
+    {
+      "id": "background.combat_grounded_v7",
+      "source": "assets/backgrounds/bg_jianghu_combat_grounded_v7.png",
+      "target": "assets/backgrounds/bg_jianghu_combat_grounded_v7.png",
+      "size": [1663, 946],
+      "role": "battle_background"
+    },
+    {
+      "id": "actor.hero.male_idle",
+      "source": "assets/actors/hero/hero_male_idle.webp",
+      "target": "assets/actors/hero/hero_male_idle.webp",
+      "size": [999, 1536],
+      "role": "hero_reference"
+    },
+    {
+      "id": "actor.hero.female_idle",
+      "source": "assets/actors/hero/hero_female_idle.webp",
+      "target": "assets/actors/hero/hero_female_idle.webp",
+      "size": [1024, 1536],
+      "role": "hero_reference"
+    },
+    {
+      "id": "actor.hero.male_v13_pose_reference",
+      "source": "incoming/imagegen/hero_male_v13_initial_pose_v1/hero_male_v13_initial_pose_v1_ff00ff.png",
+      "target": "assets/actors/hero/reference/hero_male_v13_initial_pose_v1_ff00ff.png",
+      "size": [1122, 1402],
+      "role": "approved_pose_reference"
+    },
+    {
+      "id": "actor.enemy.early_idle",
+      "source": "assets/actors/enemies/enemy_early_idle.webp",
+      "target": "assets/actors/enemies/enemy_early_idle.webp",
+      "size": [938, 1521],
+      "role": "enemy_reference"
+    },
+    {
+      "id": "actor.enemy.mid_idle",
+      "source": "assets/actors/enemies/enemy_mid_idle.webp",
+      "target": "assets/actors/enemies/enemy_mid_idle.webp",
+      "size": [958, 1532],
+      "role": "enemy_reference"
+    },
+    {
+      "id": "actor.enemy.late_idle",
+      "source": "assets/actors/enemies/enemy_late_idle.webp",
+      "target": "assets/actors/enemies/enemy_late_idle.webp",
+      "size": [1024, 1536],
+      "role": "enemy_reference"
+    },
+    {
+      "id": "actor.enemy.boss_default_idle",
+      "source": "assets/actors/enemies/boss_default_idle.webp",
+      "target": "assets/actors/enemies/boss_default_idle.webp",
+      "size": [1024, 1536],
+      "role": "boss_reference"
+    },
+    {
+      "id": "weapon.axe.basic",
+      "source": "assets/weapons/axe/axe_basic.png",
+      "target": "assets/weapons/axe/axe_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.blade.basic",
+      "source": "assets/weapons/blade/blade_basic.png",
+      "target": "assets/weapons/blade/blade_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.cane.basic",
+      "source": "assets/weapons/cane/cane_basic.png",
+      "target": "assets/weapons/cane/cane_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.duster.basic",
+      "source": "assets/weapons/duster/duster_basic.png",
+      "target": "assets/weapons/duster/duster_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.fan.basic",
+      "source": "assets/weapons/fan/fan_basic.png",
+      "target": "assets/weapons/fan/fan_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.flute.basic",
+      "source": "assets/weapons/flute/flute_basic.png",
+      "target": "assets/weapons/flute/flute_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.hidden.basic",
+      "source": "assets/weapons/hidden/hidden_basic.png",
+      "target": "assets/weapons/hidden/hidden_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.spear.basic",
+      "source": "assets/weapons/spear/spear_basic.png",
+      "target": "assets/weapons/spear/spear_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.staff.basic",
+      "source": "assets/weapons/staff/staff_basic.png",
+      "target": "assets/weapons/staff/staff_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    },
+    {
+      "id": "weapon.sword.basic",
+      "source": "assets/weapons/sword/sword_basic.png",
+      "target": "assets/weapons/sword/sword_basic.png",
+      "size": [256, 256],
+      "role": "weapon"
+    }
+  ]
+}

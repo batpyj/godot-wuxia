@@ -1,0 +1,143 @@
+[gd_scene load_steps=19 format=3]
+
+[ext_resource type="Script" path="res://scripts/HeroRig.cs" id="1_hero_rig"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/hair.png" id="2_hair"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/head.png" id="3_head"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/torso.png" id="4_torso"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/hips.png" id="5_hips"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/legs.png" id="6_legs"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/feet.png" id="7_feet"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/ribbon.png" id="8_ribbon"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/backArm.png" id="9_back_arm"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/sleeveBack.png" id="10_sleeve_back"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/robeBack.png" id="11_robe_back"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/frontArm.png" id="12_front_arm"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/sleeveFront.png" id="13_sleeve_front"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/robeFront.png" id="14_robe_front"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/frontHand.png" id="15_front_hand"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/backHand.png" id="16_back_hand"]
+[ext_resource type="Texture2D" path="res://assets/actors/hero/layers/v13g5/tassel.png" id="17_tassel"]
+[ext_resource type="Texture2D" path="res://assets/weapons/sword/sword_basic.png" id="18_sword"]
+
+[node name="HeroRig" type="Node2D"]
+script = ExtResource("1_hero_rig")
+
+[node name="GroundAnchor" type="Marker2D" parent="."]
+
+[node name="BodyRoot" type="Node2D" parent="."]
+
+[node name="LayerRoot" type="Node2D" parent="BodyRoot"]
+
+[node name="Hair" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("2_hair")
+centered = false
+z_index = 10
+
+[node name="Head" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("3_head")
+centered = false
+z_index = 20
+
+[node name="Torso" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("4_torso")
+centered = false
+z_index = 30
+
+[node name="Hips" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("5_hips")
+centered = false
+z_index = 40
+
+[node name="Legs" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("6_legs")
+centered = false
+z_index = 50
+
+[node name="Feet" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("7_feet")
+centered = false
+z_index = 60
+
+[node name="Ribbon" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("8_ribbon")
+centered = false
+z_index = 70
+
+[node name="BackArm" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("9_back_arm")
+centered = false
+z_index = 80
+
+[node name="SleeveBack" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("10_sleeve_back")
+centered = false
+z_index = 90
+
+[node name="RobeBack" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("11_robe_back")
+centered = false
+z_index = 100
+
+[node name="FrontArm" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("12_front_arm")
+centered = false
+z_index = 110
+
+[node name="SleeveFront" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("13_sleeve_front")
+centered = false
+z_index = 120
+
+[node name="RobeFront" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("14_robe_front")
+centered = false
+z_index = 130
+
+[node name="FrontHandLayer" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("15_front_hand")
+centered = false
+z_index = 140
+
+[node name="BackHand" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("16_back_hand")
+centered = false
+z_index = 150
+
+[node name="Tassel" type="Sprite2D" parent="BodyRoot/LayerRoot"]
+position = Vector2(-500, -1488)
+texture = ExtResource("17_tassel")
+centered = false
+z_index = 160
+
+[node name="FrontHand" type="Marker2D" parent="BodyRoot"]
+position = Vector2(256, -1016)
+
+[node name="WeaponSocket" type="Marker2D" parent="BodyRoot/FrontHand"]
+
+[node name="WeaponRoot" type="Node2D" parent="BodyRoot/FrontHand/WeaponSocket"]
+
+[node name="Weapon" type="Sprite2D" parent="BodyRoot/FrontHand/WeaponSocket/WeaponRoot"]
+position = Vector2(-193.2, -386.4)
+scale = Vector2(2.1, 2.1)
+texture = ExtResource("18_sword")
+centered = false
+z_index = 3
+
+[node name="FxRoot" type="Node2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

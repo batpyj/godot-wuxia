@@ -1,0 +1,232 @@
+{
+  "version": "v15g.12",
+  "coordinateSpace": "Godot 2D pixels, positive Y down",
+  "viewport": {
+    "width": 1600,
+    "height": 900
+  },
+  "stage": {
+    "background": {
+      "id": "background.combat_grounded_v7",
+      "path": "res://assets/backgrounds/bg_jianghu_combat_grounded_v7.png",
+      "sourceSize": [1663, 946],
+      "fitMode": "cover_width",
+      "initialScale": 0.9621,
+      "initialPosition": [800, 450],
+      "targetGroundY": 790
+    },
+    "lanes": {
+      "hero": {
+        "feetPosition": [430, 790],
+        "facing": "right"
+      },
+      "enemy": {
+        "feetPosition": [1170, 790],
+        "facing": "left"
+      }
+    }
+  },
+  "fx": {
+    "catalog": "res://data/fx-catalog.json",
+    "runtimeScene": "res://scenes/fx/PixelFxPlayer.tscn",
+    "previewEnvironment": "WUXIA_GODOT_PREVIEW_FX"
+  },
+  "ui": {
+    "combatSample": "res://data/combat-sample.json",
+    "combatStatusBarScene": "res://scenes/ui/CombatStatusBar.tscn",
+    "combatStatusBarScript": "res://scripts/CombatStatusBar.cs",
+    "characterInfoPanelScene": "res://scenes/ui/CharacterInfoPanel.tscn",
+    "characterInfoPanelScript": "res://scripts/CharacterInfoPanel.cs",
+    "rightInfoPanelScene": "res://scenes/ui/RightInfoPanel.tscn",
+    "rightInfoPanelScript": "res://scripts/RightInfoPanel.cs",
+    "bottomQuickBarScene": "res://scenes/ui/BottomQuickBar.tscn",
+    "bottomQuickBarScript": "res://scripts/BottomQuickBar.cs",
+    "gameModalLayerScene": "res://scenes/ui/GameModalLayer.tscn",
+    "gameModalLayerScript": "res://scripts/GameModalLayer.cs",
+    "saveActionBarScene": "res://scenes/ui/SaveActionBar.tscn",
+    "saveActionBarScript": "res://scripts/SaveActionBar.cs",
+    "modalPreviewEnvironment": "WUXIA_GODOT_PREVIEW_MODAL",
+    "gameStateScript": "res://scripts/GameState.cs",
+    "saveManagerScript": "res://scripts/SaveManager.cs",
+    "gameCommandsScript": "res://scripts/GameCommands.cs",
+    "saveSchemaVersion": "v15g.5",
+    "rewardRules": "res://data/reward-rules.json",
+    "combatPresentationRules": "res://data/combat-presentation-rules.json",
+    "saveTextPrefix": "WUXIA_SAVE_V15G0",
+    "localSavePath": "user://wuxia-save-v15g0.json",
+    "previewCommandsEnvironment": "WUXIA_GODOT_PREVIEW_COMMANDS",
+    "previewImportSaveTextEnvironment": "WUXIA_GODOT_PREVIEW_IMPORT_SAVE_TEXT",
+    "previewImportSavePathEnvironment": "WUXIA_GODOT_PREVIEW_IMPORT_SAVE_PATH",
+    "previewClearSaveEnvironment": "WUXIA_GODOT_PREVIEW_CLEAR_SAVE",
+    "stateDumpEnvironment": "WUXIA_GODOT_STATE_DUMP_PATH",
+    "saveRefreshVerifyScript": "tools/verify-save-refresh.ps1",
+    "commandVerifyScript": "tools/verify-commands.ps1",
+    "autoCombatVerifyScript": "tools/verify-auto-combat.ps1",
+    "floorAdvancePreviewScript": "tools/verify-floor-advance-preview.ps1",
+    "enemyVisualRefreshVerifyScript": "tools/verify-enemy-visual-refresh.ps1",
+    "combatTimelineVerifyScript": "tools/verify-combat-timeline.ps1",
+    "rewardSettlementVerifyScript": "tools/verify-reward-settlement.ps1",
+    "rewardRulesVerifyScript": "tools/verify-reward-rules-config.ps1",
+    "combatPresentationRulesVerifyScript": "tools/verify-combat-presentation-rules.ps1",
+    "stateDumpVerifyScript": "tools/verify-state-dump.ps1",
+    "webSaveBridgeScript": "tools/convert-web-save.ps1",
+    "webSaveBridgeVerifyScript": "tools/verify-web-save-bridge.ps1",
+    "webSaveFieldReportScript": "tools/analyze-web-save-fields.ps1",
+    "webSaveFieldReportVerifyScript": "tools/verify-web-save-field-report.ps1"
+  },
+  "actors": {
+    "hero_male": {
+      "assetId": "actor.hero.male_idle",
+      "rigScene": "res://scenes/actors/HeroRig.tscn",
+      "path": "res://assets/actors/hero/hero_male_idle.webp",
+      "sourceSize": [999, 1536],
+      "initialScale": 0.23,
+      "feetAnchorPixels": [500, 1488],
+      "feetAnchorNormalized": [0.5005, 0.9688],
+      "portraitCropNormalized": [0.22, 0.05, 0.58, 0.34],
+      "frontHandSocketPixels": [756, 472],
+      "weaponSocketLocalFromFeet": [256, -1016],
+      "layerManifest": "res://assets/actors/hero/layers/v13g5/layers-manifest.json",
+      "layerRoot": "BodyRoot/LayerRoot",
+      "layerCanvasSize": [999, 1536],
+      "activeLayers": [
+        "hair",
+        "head",
+        "torso",
+        "hips",
+        "legs",
+        "feet"
+      ],
+      "semanticPlaceholderLayers": [
+        "ribbon",
+        "frontArm",
+        "backArm",
+        "frontHand",
+        "backHand",
+        "robeFront",
+        "robeBack",
+        "sleeveFront",
+        "sleeveBack",
+        "tassel"
+      ],
+      "notes": "Initial hand and feet anchors are engineering estimates. V13G.2 must recalibrate them from the Godot stage screenshot."
+    },
+    "hero_female": {
+      "assetId": "actor.hero.female_idle",
+      "path": "res://assets/actors/hero/hero_female_idle.webp",
+      "sourceSize": [1024, 1536],
+      "initialScale": 0.23,
+      "feetAnchorPixels": [512, 1488],
+      "feetAnchorNormalized": [0.5, 0.9688],
+      "portraitCropNormalized": [0.22, 0.05, 0.58, 0.34],
+      "frontHandSocketPixels": [760, 480],
+      "weaponSocketLocalFromFeet": [248, -1008]
+    },
+    "enemy_early": {
+      "assetId": "actor.enemy.early_idle",
+      "rigScene": "res://scenes/actors/EnemyRig.tscn",
+      "path": "res://assets/actors/enemies/enemy_early_idle.webp",
+      "sourceSize": [938, 1521],
+      "initialScale": 0.22,
+      "feetAnchorPixels": [469, 1475],
+      "feetAnchorNormalized": [0.5, 0.9698],
+      "weaponSocketLocalFromFeet": [-230, -950]
+    },
+    "enemy_mid": {
+      "assetId": "actor.enemy.mid_idle",
+      "rigScene": "res://scenes/actors/EnemyRig.tscn",
+      "path": "res://assets/actors/enemies/enemy_mid_idle.webp",
+      "sourceSize": [958, 1532],
+      "initialScale": 0.22,
+      "feetAnchorPixels": [479, 1486],
+      "feetAnchorNormalized": [0.5, 0.97],
+      "weaponSocketLocalFromFeet": [-235, -965]
+    },
+    "enemy_late": {
+      "assetId": "actor.enemy.late_idle",
+      "rigScene": "res://scenes/actors/EnemyRig.tscn",
+      "path": "res://assets/actors/enemies/enemy_late_idle.webp",
+      "sourceSize": [1024, 1536],
+      "initialScale": 0.23,
+      "feetAnchorPixels": [512, 1490],
+      "feetAnchorNormalized": [0.5, 0.9701],
+      "weaponSocketLocalFromFeet": [-250, -970]
+    },
+    "boss_default": {
+      "assetId": "actor.enemy.boss_default_idle",
+      "rigScene": "res://scenes/actors/EnemyRig.tscn",
+      "path": "res://assets/actors/enemies/boss_default_idle.webp",
+      "sourceSize": [1024, 1536],
+      "initialScale": 0.25,
+      "feetAnchorPixels": [512, 1490],
+      "feetAnchorNormalized": [0.5, 0.9701],
+      "weaponSocketLocalFromFeet": [-260, -980]
+    }
+  },
+  "weapons": {
+    "defaultGripPixels": [92, 184],
+    "defaultLocalScaleInActorRig": 2.1,
+    "types": {
+      "axe": {
+        "path": "res://assets/weapons/axe/axe_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 184],
+        "attackArc": "heavy_chop"
+      },
+      "blade": {
+        "path": "res://assets/weapons/blade/blade_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 184],
+        "attackArc": "wide_slash"
+      },
+      "cane": {
+        "path": "res://assets/weapons/cane/cane_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 184],
+        "attackArc": "short_sweep"
+      },
+      "duster": {
+        "path": "res://assets/weapons/duster/duster_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 176],
+        "attackArc": "soft_whip"
+      },
+      "fan": {
+        "path": "res://assets/weapons/fan/fan_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 176],
+        "attackArc": "fan_wave"
+      },
+      "flute": {
+        "path": "res://assets/weapons/flute/flute_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 176],
+        "attackArc": "sound_wave"
+      },
+      "hidden": {
+        "path": "res://assets/weapons/hidden/hidden_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 176],
+        "attackArc": "projectile"
+      },
+      "spear": {
+        "path": "res://assets/weapons/spear/spear_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 190],
+        "attackArc": "thrust_line"
+      },
+      "staff": {
+        "path": "res://assets/weapons/staff/staff_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [128, 188],
+        "attackArc": "staff_sweep"
+      },
+      "sword": {
+        "path": "res://assets/weapons/sword/sword_basic.png",
+        "sourceSize": [256, 256],
+        "gripPixels": [92, 184],
+        "attackArc": "sword_slash"
+      }
+    }
+  }
+}

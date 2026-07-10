@@ -1,0 +1,19 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.{png,webp,gif,jpg,jpeg,ico,mp3,wav,ogg,mp4,avi,ttf,otf,woff,woff2,pck,zip,dll,exe}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+
+[*.{cs,csproj,sln,props,targets,godot,tscn,tres,gd,json,md,ps1,import,xml,yml,yaml,csv,txt}]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true

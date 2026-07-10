@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/CharacterInfoPanel.cs" id="1_character_info"]
+
+[node name="CharacterInfoPanel" type="Control"]
+layout_mode = 3
+anchors_preset = 7
+anchor_bottom = 1.0
+offset_right = 250.0
+grow_vertical = 2
+script = ExtResource("1_character_info")

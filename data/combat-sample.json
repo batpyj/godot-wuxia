@@ -1,0 +1,243 @@
+{
+  "version": "v15g.12",
+  "stage": {
+    "floor": 20,
+    "chapter": "江湖风云",
+    "martialRealm": "一代宗师",
+    "year": 8,
+    "direction": "养伤潜修 / 练功闭门",
+    "combatPower": "1.7万"
+  },
+  "hero": {
+    "name": "江湖风云",
+    "title": "少林俗家弟子",
+    "sect": "少林",
+    "realm": "一代宗师",
+    "portraitPath": "res://assets/actors/hero/hero_male_idle.webp",
+    "actorAssetId": "actor.hero.male_idle",
+    "weapon": "sword",
+    "weaponAssetId": "weapon.sword.basic",
+    "hp": 16000,
+    "maxHp": 17000,
+    "qi": 73,
+    "comprehensivePower": 17000,
+    "cultivation": 4357,
+    "cultivationPerSecond": 17.5,
+    "effects": ["内功增伤 +13%", "破防 +1%", "伤害减免 -5%"],
+    "battleStats": {
+      "outerPower": 1410,
+      "innerPower": 1217,
+      "outerDefense": 832,
+      "innerDefense": 1010,
+      "critRate": 82,
+      "dodgeRate": 46
+    },
+    "resources": {
+      "silver": 3589,
+      "essence": 62,
+      "food": 18
+    },
+    "jianghuQualities": {
+      "reputation": 47,
+      "comprehension": 55,
+      "luck": 16,
+      "charm": 24,
+      "root": 51,
+      "resolve": 19
+    }
+  },
+  "enemy": {
+    "name": "黑衣剑客",
+    "rank": "第19层",
+    "tag": "身法",
+    "actorAssetId": "actor.enemy.early_idle",
+    "hp": 5312,
+    "maxHp": 5312,
+    "combatPower": "2387",
+    "effects": ["破手", "身法斗"]
+  },
+  "rightPanel": {
+    "adventure": {
+      "title": "江湖闯荡",
+      "status": "暂停闯荡",
+      "route": "养伤潜修 / 练功闭门",
+      "progress": "第20层 · 即将挑战第21层",
+      "note": "当前以稳血和练功为主，避免连续挑战造成气血断层。"
+    },
+    "sect": {
+      "title": "门派",
+      "name": "少林",
+      "identity": "俗家弟子",
+      "bonuses": ["气血回复 +30%", "外功 +12%", "内功 +12%"]
+    },
+    "martialArts": [
+      {
+        "name": "无忌心经",
+        "type": "内功常驻",
+        "level": "突破 8/10 重",
+        "effect": "内功 +108 / 防御 +35 / 气血 +24"
+      },
+      {
+        "name": "一阳指",
+        "type": "指法",
+        "level": "突破 6/10 重",
+        "effect": "破防 +1% / 攻速 +10 / 暴击 +12"
+      }
+    ],
+    "weapon": {
+      "title": "武器",
+      "name": "王府纹剑",
+      "type": "剑",
+      "score": 197,
+      "socket": "独立挂点 · 手部跟随",
+      "effects": ["剑气拖尾", "攻击评分 +197", "后续可替换名器贴图"]
+    }
+  },
+  "romance": {
+    "name": "沈青萝",
+    "favor": 15,
+    "status": "援手待部署",
+    "badge": "待"
+  },
+  "commands": {
+    "isPaused": true,
+    "autoExplore": false,
+    "activeMartialArtIndex": 0,
+    "lastCommand": "初始状态"
+  },
+  "combat": {
+    "turn": 0,
+    "lastAction": "idle",
+    "lastTarget": "enemy",
+    "lastDamage": 0,
+    "lastDamageRatio": 0,
+    "lastHitKind": "none",
+    "enemyDefeated": false,
+    "message": "战斗准备",
+    "eventLog": [
+      "战斗准备 · 等待自动闯荡"
+    ],
+    "events": [
+      {
+        "turn": 0,
+        "kind": "ready",
+        "actor": "system",
+        "target": "combat",
+        "amount": 0,
+        "message": "战斗准备 · 等待自动闯荡"
+      }
+    ],
+    "migrationWarnings": []
+  },
+  "bottomBar": [
+    {
+      "icon": "江",
+      "title": "江湖",
+      "main": "闯荡 · 第20层",
+      "sub": "养伤潜修中",
+      "badge": "中"
+    },
+    {
+      "icon": "门",
+      "title": "门派",
+      "main": "少林 · 俗家弟子",
+      "sub": "气血回复 +30%",
+      "badge": "开"
+    },
+    {
+      "icon": "缘",
+      "title": "情缘",
+      "main": "沈青萝 · 好感15",
+      "sub": "援手待部署",
+      "badge": "待"
+    },
+    {
+      "icon": "功",
+      "title": "功法",
+      "main": "已学功法 10/13",
+      "sub": "无忌心经突破 8重",
+      "badge": "开"
+    },
+    {
+      "icon": "兵",
+      "title": "武器",
+      "main": "王府纹剑 · 评分197",
+      "sub": "剑气拖尾",
+      "badge": "开"
+    }
+  ],
+  "modalPreview": {
+    "eyebrow": "功法详情",
+    "title": "无忌心经 · 内功常驻",
+    "body": "以内息温养经脉，战斗中持续提升内功、防御和气血上限。当前作为 Godot 弹窗系统的只读详情样例，后续可复用到存档导入、清空存档、奇遇选择和功法详情。",
+    "details": [
+      "突破进度：8 / 10 重",
+      "当前加成：内功 +108，防御 +35，气血 +24",
+      "联动表现：内功护体、少林金身、受击减伤提示"
+    ],
+    "confirm": "确认",
+    "cancel": "关闭"
+  },
+  "saveActions": [
+    {
+      "key": "import",
+      "label": "导入存档",
+      "hint": "粘贴文本"
+    },
+    {
+      "key": "export",
+      "label": "导出存档",
+      "hint": "复制文本"
+    },
+    {
+      "key": "clear",
+      "label": "清空存档",
+      "hint": "二次确认"
+    }
+  ],
+  "saveDialogs": {
+    "import": {
+      "eyebrow": "导入存档",
+      "title": "粘贴存档文本",
+      "body": "不走浏览器文件弹窗，直接在游戏内粘贴网页端导出的存档文本。当前版本先完成 UI 流程，后续接真实解析和校验。",
+      "details": [
+        "建议先导出一份当前存档再导入。",
+        "导入前会做版本号、字段和校验码检查。",
+        "失败时只提示错误，不覆盖当前存档。"
+      ],
+      "inputLabel": "存档文本",
+      "inputText": "在这里粘贴存档文本……",
+      "inputReadOnly": false,
+      "confirm": "导入预览",
+      "cancel": "取消"
+    },
+    "export": {
+      "eyebrow": "导出存档",
+      "title": "复制当前存档",
+      "body": "这里会显示 SaveManager 根据当前 GameState 生成的真实导出文本，包含版本号、Base64 载荷和 SHA-256 校验片段。",
+      "details": [
+        "导出文本已包含版本号和校验信息。",
+        "复制后可以保存到本地文本文件。",
+        "不会触发浏览器下载弹窗。"
+      ],
+      "inputLabel": "导出文本",
+      "inputText": "WUXIA_SAVE_V14G6_SAMPLE::eyJmbG9vciI6MjAsInNlY3QiOiJzaGFvbGluIn0=",
+      "inputReadOnly": true,
+      "confirm": "复制文本",
+      "cancel": "关闭"
+    },
+    "clear": {
+      "eyebrow": "危险操作",
+      "title": "清空存档",
+      "body": "这会清空本地存档并回到初始状态。当前先完成二次确认样式，真实清空逻辑后续绑定存档管理器。",
+      "details": [
+        "清空前建议先导出备份。",
+        "确认后将删除本地存档槽。",
+        "此操作需要二次确认，不能误触。"
+      ],
+      "danger": true,
+      "confirm": "清空存档",
+      "cancel": "取消"
+    }
+  }
+}
